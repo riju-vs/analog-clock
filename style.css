@@ -1,0 +1,100 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000000;
+  margin: 0;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 8px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(192, 16, 16, 0.2);
+  background: rgb(6, 5, 5);
+  background-image: url(iam.jpg);
+  background-size: cover;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px); /* Fix for the hands positioning */
+}
+
+.hand {
+  width: 50%;
+  background: black;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  height: 4px;
+  background:green ;
+}
+
+.minute-hand {
+  height: 5px;
+  background: rgb(8, 5, 184);
+}
+
+.second-hand {
+  height: 1px;
+  background: rgb(255, 8, 8);
+}
+
+.number {
+  position: absolute;
+  font-size: 20px;
+  transform: translate(-50%, -50%);
+  /* background: transparent;
+  color: rgb(248, 244, 14); */
+}
+
+.number1  { top: 9%; left: 70%; }
+.number2  { top: 20%; left: 85%; }
+.number3  { top: 48%; left: 97%; }
+.number4  { top: 70%; left: 97%; }
+.number5  { top: 85%; left: 80%; }
+.number6  { top: 97%; left: 50%; }
+.number7  { top: 90%; left: 15%; }
+.number8  { top: 70%; left: 5%; }
+.number9  { top: 50%; left: 3%; }
+.number10 { top: 25%; left: 10%; }
+.number11 { top: 5%; left: 30%; }
+.number12 { top: 7%; left: 50%; }
+.number1{font-size: 2rem;
+  rotate: 30deg;
+  color: rgb(63, 192, 8);}
+.number2{
+  font-size: 1.5rem;color: rgb(53, 28, 235);}
+.number3{
+  font-size: 2.5rem;color: darkgreen;}
+.number4{ rotate: -40deg;
+  font-size: 2.5rem;color: firebrick;}
+.number5{ rotate: -30deg;
+  font-size: 3rem;color: cyan;}
+.number6{ rotate: 360deg;
+  font-size: 3rem;color: darkgoldenrod;}
+.number7{ rotate: 35deg;
+  font-size: 3rem;color: rgb(81, 11, 131);}
+.number8{
+  font-size: 2rem;color: blue;}
+.number9{
+  font-size: 2rem;color: rgb(255, 255, 255);}
+.number10{
+  font-size: 1.5rem;color: orangered;}
+.number11{ rotate: -30deg;
+  font-size: 2rem;color: teal;}
+.number12{
+  font-size: 2rem;color: rgb(12, 230, 172);}
